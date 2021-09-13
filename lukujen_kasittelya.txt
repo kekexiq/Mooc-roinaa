@@ -1,0 +1,27 @@
+syotetyt_luvut = 0
+summa = 0
+positiivinen = 0
+negatiivinen = 0
+print("Syötä kokonaislukuja, 0 lopettaa:")
+
+while True:
+    
+    luku = int(input("Luku: "))
+
+    syotetyt_luvut += 1
+    summa += luku
+
+    if luku > 0:
+        positiivinen = positiivinen + 1
+
+    if luku < 0:
+        negatiivinen = negatiivinen + 1
+
+    if luku == 0:
+        print("... lukujen kysely")
+        print(f"Lukuja yhteensä {syotetyt_luvut - 1}")
+        print(f"Lukujen summa {summa}")
+        print(f"Lukujen keskiarvo {summa / (syotetyt_luvut - 1)}")
+        print(f"Positiivisia {positiivinen}")
+        print(f"Negatiivisia {negatiivinen}")
+        break
