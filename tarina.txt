@@ -1,0 +1,13 @@
+tarina = ""
+sama = ""
+
+while True:
+    sana = input("Anna sana: ")
+    
+    if sama == sana or sana == "loppu":
+        break
+    
+    tarina += sana + " "
+    sama = sana
+    
+print(tarina)
