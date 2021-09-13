@@ -1,0 +1,14 @@
+def uniikit(lista):
+    
+    vertailulista = []
+
+    for arvo in lista:
+        if arvo not in vertailulista:
+            vertailulista.append(arvo)
+
+    vertailulista.sort()
+    return vertailulista
+
+if __name__ == "__main__":
+    lista = [1, 2, 3, 1, 2, 3]
+    print(uniikit(lista))
