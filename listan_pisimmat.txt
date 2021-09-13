@@ -1,0 +1,24 @@
+def pisimmat(lista):
+    
+    suurimmat = []
+    suurin = ""
+    tarkastus = []
+    buurin = ""
+    
+    for nimi in lista:
+       if len(nimi) > len(suurin) or len(nimi) == len(suurin):
+           suurin = nimi
+           suurimmat.append(suurin)
+
+    for i in suurimmat[::-1]:
+        if len(i) > len(buurin) or len(i) == len(buurin):
+            buurin = i
+            tarkastus.append(buurin)
+    
+    return tarkastus[::-1]
+
+
+if __name__ == "__main__":
+    lista = ["pekka", "emilia", "venla", "eero", "antti", "juhani"]
+    tulos = pisimmat(lista)
+    print(tulos)
