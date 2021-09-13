@@ -1,0 +1,19 @@
+def eka_sana(stringi):
+    lista = stringi.split(' ')
+    return lista[0]
+
+def toka_sana(stringi):
+    lista = stringi.split(' ')
+    tokaSana = lista[1]
+    return tokaSana
+
+def vika_sana(stringi):
+    lista = stringi.split(' ')
+    vikaSana = lista[-1]
+    return vikaSana
+
+if __name__ == "__main__":
+    lause = "olipa kerran kauan sitten ohjelmoija"
+    print(eka_sana(lause))
+    print(toka_sana(lause)) 
+    print(vika_sana(lause))
